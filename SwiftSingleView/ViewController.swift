@@ -69,7 +69,6 @@ class ViewController: UIViewController, CALayerDelegate {
         self.contaninerView = cView;
     }
     
-    
     func draw(_ layer: CALayer, in ctx: CGContext) {
         // draw a thick red circle
         ctx.setLineWidth(10.0);

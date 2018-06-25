@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40B781820E087180011F0C7 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = A40B781720E087180011F0C7 /* ship.png */; };
 		A411A59320DA598F0027EFC3 /* SAAnimationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A411A59220DA598F0027EFC3 /* SAAnimationCollectionViewCell.swift */; };
+		A411A59620DCD2450027EFC3 /* SABezierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A411A59520DCD2450027EFC3 /* SABezierViewController.swift */; };
 		A475951420D2101200B08D04 /* SAAnimationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A475951320D2101200B08D04 /* SAAnimationCollectionViewController.swift */; };
 		A4796CDB2084822500D1276D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4796CDA2084822500D1276D /* AppDelegate.swift */; };
 		A4796CDD2084822500D1276D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4796CDC2084822500D1276D /* ViewController.swift */; };
@@ -37,7 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A40B781720E087180011F0C7 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
 		A411A59220DA598F0027EFC3 /* SAAnimationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAnimationCollectionViewCell.swift; sourceTree = "<group>"; };
+		A411A59520DCD2450027EFC3 /* SABezierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SABezierViewController.swift; sourceTree = "<group>"; };
 		A475951320D2101200B08D04 /* SAAnimationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAnimationCollectionViewController.swift; sourceTree = "<group>"; };
 		A4796CD72084822500D1276D /* SwiftSingleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSingleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4796CDA2084822500D1276D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A411A59420DCD0D80027EFC3 /* BezierAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A411A59520DCD2450027EFC3 /* SABezierViewController.swift */,
+			);
+			path = BezierAnimation;
+			sourceTree = "<group>";
+		};
 		A47594FE20D109D900B08D04 /* AnimationCollection */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +124,7 @@
 		A4796CD92084822500D1276D /* SwiftSingleView */ = {
 			isa = PBXGroup;
 			children = (
+				A411A59420DCD0D80027EFC3 /* BezierAnimation */,
 				A47594FE20D109D900B08D04 /* AnimationCollection */,
 				A4796D082084984100D1276D /* images */,
 				A4796CDA2084822500D1276D /* AppDelegate.swift */,
@@ -145,6 +158,7 @@
 		A4796D082084984100D1276D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A40B781720E087180011F0C7 /* ship.png */,
 				A4796D092084987A00D1276D /* snowman.png */,
 			);
 			path = images;
@@ -260,6 +274,7 @@
 				A4796CE52084822500D1276D /* LaunchScreen.storyboard in Resources */,
 				A4796D0A2084987A00D1276D /* snowman.png in Resources */,
 				A4796CE22084822500D1276D /* Assets.xcassets in Resources */,
+				A40B781820E087180011F0C7 /* ship.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +304,7 @@
 				A4796D0E2085E9D900D1276D /* MainView.swift in Sources */,
 				A4796CDB2084822500D1276D /* AppDelegate.swift in Sources */,
 				A475951420D2101200B08D04 /* SAAnimationCollectionViewController.swift in Sources */,
+				A411A59620DCD2450027EFC3 /* SABezierViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -55,7 +55,7 @@ UICollectionViewDataSource {
         parentView.addSubview(button);
         
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture(gesture:)));
-        longPressGesture.minimumPressDuration = 0.2;
+        longPressGesture.minimumPressDuration = 0.5;
         self.collectionView.addGestureRecognizer(longPressGesture);
     }
     
@@ -67,6 +67,11 @@ UICollectionViewDataSource {
         }
         self.dataList = array;
     }
+    
+//    func controllerDict() -> Dictionary {
+//        return {
+//        }
+//    }
 
     //MARK: - UICollectionViewDataSource
     
@@ -92,7 +97,8 @@ UICollectionViewDataSource {
     //MARK: - UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let VC = SABezierViewController();
+        self.navigationController?.pushViewController(VC, animated: true);
     }
     
     func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
